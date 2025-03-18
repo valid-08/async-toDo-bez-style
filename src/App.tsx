@@ -59,17 +59,6 @@ function App() {
     }
   }
 
-  async function editUser(id: string | number) {
-    try {
-      await axios.put(`${url}/${id}`, { name: editName, age: editAge, email: editEmail })
-      get()
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
-
-
 
 
 
